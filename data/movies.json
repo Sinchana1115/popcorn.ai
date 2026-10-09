@@ -1,0 +1,975 @@
+[
+ {
+  "id": 0,
+  "title": "Inception",
+  "year": 2010,
+  "type": "movie",
+  "language": "English",
+  "genres": [
+   "Sci-Fi",
+   "Thriller",
+   "Action"
+  ],
+  "minutes": 148,
+  "rating": 8.8,
+  "cast": [
+   "Leonardo DiCaprio",
+   "Joseph Gordon-Levitt",
+   "Tom Hardy",
+   "Elliot Page"
+  ],
+  "summary": "A thief who steals secrets through dreams is offered a shot at redemption: planting an idea inside a target's mind.",
+  "moods": [
+   "mindbending",
+   "intense"
+  ],
+  "seasons": ""
+ },
+ {
+  "id": 1,
+  "title": "The Shawshank Redemption",
+  "year": 1994,
+  "type": "movie",
+  "language": "English",
+  "genres": [
+   "Drama",
+   "Crime"
+  ],
+  "minutes": 142,
+  "rating": 9.3,
+  "cast": [
+   "Tim Robbins",
+   "Morgan Freeman"
+  ],
+  "summary": "A banker jailed for a crime he says he didn't commit forms a lifelong friendship and quietly plans his escape.",
+  "moods": [
+   "emotional",
+   "classic"
+  ],
+  "seasons": ""
+ },
+ {
+  "id": 2,
+  "title": "The Grand Budapest Hotel",
+  "year": 2014,
+  "type": "movie",
+  "language": "English",
+  "genres": [
+   "Comedy",
+   "Mystery"
+  ],
+  "minutes": 99,
+  "rating": 8.1,
+  "cast": [
+   "Ralph Fiennes",
+   "Tony Revolori"
+  ],
+  "summary": "A legendary concierge and his lobby boy get tangled in a stolen painting and a family fortune.",
+  "moods": [
+   "light",
+   "feelgood"
+  ],
+  "seasons": ""
+ },
+ {
+  "id": 3,
+  "title": "Interstellar",
+  "year": 2014,
+  "type": "movie",
+  "language": "English",
+  "genres": [
+   "Sci-Fi",
+   "Drama"
+  ],
+  "minutes": 169,
+  "rating": 8.7,
+  "cast": [
+   "Matthew McConaughey",
+   "Anne Hathaway",
+   "Jessica Chastain"
+  ],
+  "summary": "Astronauts travel through a wormhole to find humanity a new home as Earth fades.",
+  "moods": [
+   "emotional",
+   "mindbending"
+  ],
+  "seasons": ""
+ },
+ {
+  "id": 4,
+  "title": "Knives Out",
+  "year": 2019,
+  "type": "movie",
+  "language": "English",
+  "genres": [
+   "Mystery",
+   "Comedy",
+   "Crime"
+  ],
+  "minutes": 130,
+  "rating": 7.9,
+  "cast": [
+   "Daniel Craig",
+   "Ana de Armas",
+   "Chris Evans"
+  ],
+  "summary": "A detective investigates the death of a wealthy novelist surrounded by his scheming family.",
+  "moods": [
+   "light",
+   "twist"
+  ],
+  "seasons": ""
+ },
+ {
+  "id": 5,
+  "title": "La La Land",
+  "year": 2016,
+  "type": "movie",
+  "language": "English",
+  "genres": [
+   "Romance",
+   "Music",
+   "Drama"
+  ],
+  "minutes": 128,
+  "rating": 8,
+  "cast": [
+   "Ryan Gosling",
+   "Emma Stone"
+  ],
+  "summary": "A jazz pianist and an aspiring actress chase their dreams and fall in love in Los Angeles.",
+  "moods": [
+   "emotional",
+   "feelgood"
+  ],
+  "seasons": ""
+ },
+ {
+  "id": 6,
+  "title": "Mad Max: Fury Road",
+  "year": 2015,
+  "type": "movie",
+  "language": "English",
+  "genres": [
+   "Action",
+   "Sci-Fi"
+  ],
+  "minutes": 120,
+  "rating": 8.1,
+  "cast": [
+   "Tom Hardy",
+   "Charlize Theron"
+  ],
+  "summary": "In a desert wasteland, a drifter and a rebel commander flee a tyrant in one long chase.",
+  "moods": [
+   "intense"
+  ],
+  "seasons": ""
+ },
+ {
+  "id": 7,
+  "title": "Coco",
+  "year": 2017,
+  "type": "movie",
+  "language": "English",
+  "genres": [
+   "Animation",
+   "Family",
+   "Music",
+   "Fantasy"
+  ],
+  "minutes": 105,
+  "rating": 8.4,
+  "cast": [
+   "Anthony Gonzalez",
+   "Gael García Bernal"
+  ],
+  "summary": "A boy who dreams of music enters the Land of the Dead to uncover his family's secret.",
+  "moods": [
+   "emotional",
+   "feelgood",
+   "family"
+  ],
+  "seasons": ""
+ },
+ {
+  "id": 8,
+  "title": "Get Out",
+  "year": 2017,
+  "type": "movie",
+  "language": "English",
+  "genres": [
+   "Horror",
+   "Thriller"
+  ],
+  "minutes": 104,
+  "rating": 7.7,
+  "cast": [
+   "Daniel Kaluuya",
+   "Allison Williams"
+  ],
+  "summary": "A visit to his girlfriend's family estate turns sinister for a young photographer.",
+  "moods": [
+   "dark",
+   "intense",
+   "twist"
+  ],
+  "seasons": ""
+ },
+ {
+  "id": 9,
+  "title": "Parasite",
+  "year": 2019,
+  "type": "movie",
+  "language": "Korean",
+  "genres": [
+   "Thriller",
+   "Drama",
+   "Comedy"
+  ],
+  "minutes": 132,
+  "rating": 8.5,
+  "cast": [
+   "Song Kang-ho",
+   "Choi Woo-shik",
+   "Park So-dam"
+  ],
+  "summary": "A poor family schemes its way into a wealthy household, with unexpected consequences.",
+  "moods": [
+   "dark",
+   "twist",
+   "intense"
+  ],
+  "seasons": ""
+ },
+ {
+  "id": 10,
+  "title": "Train to Busan",
+  "year": 2016,
+  "type": "movie",
+  "language": "Korean",
+  "genres": [
+   "Horror",
+   "Action",
+   "Thriller"
+  ],
+  "minutes": 118,
+  "rating": 7.6,
+  "cast": [
+   "Gong Yoo",
+   "Ma Dong-seok"
+  ],
+  "summary": "Passengers fight to survive a zombie outbreak on a speeding train.",
+  "moods": [
+   "intense",
+   "emotional"
+  ],
+  "seasons": ""
+ },
+ {
+  "id": 11,
+  "title": "Spirited Away",
+  "year": 2001,
+  "type": "movie",
+  "language": "Japanese",
+  "genres": [
+   "Animation",
+   "Fantasy",
+   "Family"
+  ],
+  "minutes": 125,
+  "rating": 8.6,
+  "cast": [
+   "Rumi Hiiragi",
+   "Miyu Irino"
+  ],
+  "summary": "A girl wanders into a spirit world and must work at a bathhouse to free her parents.",
+  "moods": [
+   "feelgood",
+   "family",
+   "classic"
+  ],
+  "seasons": ""
+ },
+ {
+  "id": 12,
+  "title": "Your Name",
+  "year": 2016,
+  "type": "movie",
+  "language": "Japanese",
+  "genres": [
+   "Animation",
+   "Romance",
+   "Fantasy"
+  ],
+  "minutes": 106,
+  "rating": 8.4,
+  "cast": [
+   "Ryunosuke Kamiki",
+   "Mone Kamishiraishi"
+  ],
+  "summary": "Two strangers mysteriously swap bodies and try to find each other.",
+  "moods": [
+   "emotional",
+   "feelgood"
+  ],
+  "seasons": ""
+ },
+ {
+  "id": 13,
+  "title": "Amélie",
+  "year": 2001,
+  "type": "movie",
+  "language": "French",
+  "genres": [
+   "Romance",
+   "Comedy"
+  ],
+  "minutes": 122,
+  "rating": 8.3,
+  "cast": [
+   "Audrey Tautou",
+   "Mathieu Kassovitz"
+  ],
+  "summary": "A shy Parisian waitress secretly improves other people's lives and finds love herself.",
+  "moods": [
+   "feelgood",
+   "light"
+  ],
+  "seasons": ""
+ },
+ {
+  "id": 14,
+  "title": "Pan's Labyrinth",
+  "year": 2006,
+  "type": "movie",
+  "language": "Spanish",
+  "genres": [
+   "Fantasy",
+   "Drama",
+   "War"
+  ],
+  "minutes": 118,
+  "rating": 8.2,
+  "cast": [
+   "Ivana Baquero",
+   "Sergi López"
+  ],
+  "summary": "In 1944 Spain, a girl discovers a fantasy world while her stepfather hunts rebels.",
+  "moods": [
+   "dark",
+   "emotional"
+  ],
+  "seasons": ""
+ },
+ {
+  "id": 15,
+  "title": "3 Idiots",
+  "year": 2009,
+  "type": "movie",
+  "language": "Hindi",
+  "genres": [
+   "Comedy",
+   "Drama"
+  ],
+  "minutes": 170,
+  "rating": 8.4,
+  "cast": [
+   "Aamir Khan",
+   "R. Madhavan",
+   "Sharman Joshi"
+  ],
+  "summary": "Three engineering students and their free-thinking friend challenge the rat race.",
+  "moods": [
+   "feelgood",
+   "emotional",
+   "light"
+  ],
+  "seasons": ""
+ },
+ {
+  "id": 16,
+  "title": "Dangal",
+  "year": 2016,
+  "type": "movie",
+  "language": "Hindi",
+  "genres": [
+   "Drama",
+   "Sports"
+  ],
+  "minutes": 161,
+  "rating": 8.3,
+  "cast": [
+   "Aamir Khan",
+   "Fatima Sana Shaikh",
+   "Sanya Malhotra"
+  ],
+  "summary": "A former wrestler trains his daughters to become world-class champions.",
+  "moods": [
+   "emotional",
+   "feelgood"
+  ],
+  "seasons": ""
+ },
+ {
+  "id": 17,
+  "title": "Andhadhun",
+  "year": 2018,
+  "type": "movie",
+  "language": "Hindi",
+  "genres": [
+   "Thriller",
+   "Comedy",
+   "Crime"
+  ],
+  "minutes": 139,
+  "rating": 8.2,
+  "cast": [
+   "Ayushmann Khurrana",
+   "Tabu",
+   "Radhika Apte"
+  ],
+  "summary": "A pianist pretending to be blind witnesses a murder and is dragged into a web of lies.",
+  "moods": [
+   "twist",
+   "dark"
+  ],
+  "seasons": ""
+ },
+ {
+  "id": 18,
+  "title": "Zindagi Na Milegi Dobara",
+  "year": 2011,
+  "type": "movie",
+  "language": "Hindi",
+  "genres": [
+   "Comedy",
+   "Drama"
+  ],
+  "minutes": 155,
+  "rating": 8.1,
+  "cast": [
+   "Hrithik Roshan",
+   "Farhan Akhtar",
+   "Abhay Deol",
+   "Katrina Kaif"
+  ],
+  "summary": "Three friends take a bachelor road trip across Spain and confront their fears.",
+  "moods": [
+   "feelgood",
+   "light"
+  ],
+  "seasons": ""
+ },
+ {
+  "id": 19,
+  "title": "Gully Boy",
+  "year": 2019,
+  "type": "movie",
+  "language": "Hindi",
+  "genres": [
+   "Drama",
+   "Music"
+  ],
+  "minutes": 153,
+  "rating": 7.9,
+  "cast": [
+   "Ranveer Singh",
+   "Alia Bhatt"
+  ],
+  "summary": "A young man from Mumbai's slums rises as a rapper.",
+  "moods": [
+   "emotional",
+   "feelgood"
+  ],
+  "seasons": ""
+ },
+ {
+  "id": 20,
+  "title": "Queen",
+  "year": 2013,
+  "type": "movie",
+  "language": "Hindi",
+  "genres": [
+   "Comedy",
+   "Drama"
+  ],
+  "minutes": 146,
+  "rating": 8.2,
+  "cast": [
+   "Kangana Ranaut",
+   "Rajkummar Rao"
+  ],
+  "summary": "Dumped before her wedding, a young woman goes on her honeymoon alone and finds herself.",
+  "moods": [
+   "feelgood",
+   "light"
+  ],
+  "seasons": ""
+ },
+ {
+  "id": 21,
+  "title": "Tumbbad",
+  "year": 2018,
+  "type": "movie",
+  "language": "Hindi",
+  "genres": [
+   "Horror",
+   "Fantasy"
+  ],
+  "minutes": 104,
+  "rating": 8.2,
+  "cast": [
+   "Sohum Shah"
+  ],
+  "summary": "A man's greed for a cursed treasure unleashes a terrifying ancient god.",
+  "moods": [
+   "dark",
+   "intense"
+  ],
+  "seasons": ""
+ },
+ {
+  "id": 22,
+  "title": "Vikram",
+  "year": 2022,
+  "type": "movie",
+  "language": "Tamil",
+  "genres": [
+   "Action",
+   "Thriller"
+  ],
+  "minutes": 174,
+  "rating": 8.3,
+  "cast": [
+   "Kamal Haasan",
+   "Vijay Sethupathi",
+   "Fahadh Faasil"
+  ],
+  "summary": "A black-ops agent investigates masked killers and uncovers a drug empire.",
+  "moods": [
+   "intense"
+  ],
+  "seasons": ""
+ },
+ {
+  "id": 23,
+  "title": "96",
+  "year": 2018,
+  "type": "movie",
+  "language": "Tamil",
+  "genres": [
+   "Romance",
+   "Drama"
+  ],
+  "minutes": 158,
+  "rating": 8.5,
+  "cast": [
+   "Vijay Sethupathi",
+   "Trisha"
+  ],
+  "summary": "Old school friends reunite and relive a love that never got a chance.",
+  "moods": [
+   "emotional"
+  ],
+  "seasons": ""
+ },
+ {
+  "id": 24,
+  "title": "RRR",
+  "year": 2022,
+  "type": "movie",
+  "language": "Telugu",
+  "genres": [
+   "Action",
+   "Drama"
+  ],
+  "minutes": 187,
+  "rating": 7.8,
+  "cast": [
+   "N.T. Rama Rao Jr.",
+   "Ram Charan",
+   "Alia Bhatt"
+  ],
+  "summary": "Two revolutionaries form an unlikely friendship in the fight against the British Raj.",
+  "moods": [
+   "intense",
+   "feelgood"
+  ],
+  "seasons": ""
+ },
+ {
+  "id": 25,
+  "title": "Kantara",
+  "year": 2022,
+  "type": "movie",
+  "language": "Kannada",
+  "genres": [
+   "Thriller",
+   "Drama",
+   "Fantasy"
+  ],
+  "minutes": 148,
+  "rating": 8.2,
+  "cast": [
+   "Rishab Shetty",
+   "Sapthami Gowda"
+  ],
+  "summary": "A forest-dwelling community's folklore collides with a government officer's authority.",
+  "moods": [
+   "intense",
+   "dark"
+  ],
+  "seasons": ""
+ },
+ {
+  "id": 26,
+  "title": "Drishyam",
+  "year": 2013,
+  "type": "movie",
+  "language": "Malayalam",
+  "genres": [
+   "Thriller",
+   "Crime",
+   "Drama"
+  ],
+  "minutes": 160,
+  "rating": 8.2,
+  "cast": [
+   "Mohanlal",
+   "Meena"
+  ],
+  "summary": "A cable operator goes to extreme lengths to protect his family after an accident.",
+  "moods": [
+   "twist",
+   "intense"
+  ],
+  "seasons": ""
+ },
+ {
+  "id": 27,
+  "title": "Breaking Bad",
+  "year": 2008,
+  "type": "series",
+  "language": "English",
+  "genres": [
+   "Crime",
+   "Drama",
+   "Thriller"
+  ],
+  "minutes": 47,
+  "rating": 9.5,
+  "cast": [
+   "Bryan Cranston",
+   "Aaron Paul"
+  ],
+  "summary": "A chemistry teacher diagnosed with cancer turns to making meth to secure his family's future.",
+  "moods": [
+   "dark",
+   "binge",
+   "intense"
+  ],
+  "seasons": "5 seasons"
+ },
+ {
+  "id": 28,
+  "title": "Stranger Things",
+  "year": 2016,
+  "type": "series",
+  "language": "English",
+  "genres": [
+   "Sci-Fi",
+   "Horror",
+   "Fantasy"
+  ],
+  "minutes": 50,
+  "rating": 8.7,
+  "cast": [
+   "Millie Bobby Brown",
+   "Winona Ryder",
+   "David Harbour"
+  ],
+  "summary": "Kids in a small town face a secret lab, monsters and a parallel dimension.",
+  "moods": [
+   "binge",
+   "intense"
+  ],
+  "seasons": "4+ seasons"
+ },
+ {
+  "id": 29,
+  "title": "The Office (US)",
+  "year": 2005,
+  "type": "series",
+  "language": "English",
+  "genres": [
+   "Comedy"
+  ],
+  "minutes": 22,
+  "rating": 9,
+  "cast": [
+   "Steve Carell",
+   "Rainn Wilson",
+   "John Krasinski"
+  ],
+  "summary": "A mockumentary on the daily lives of paper company office workers.",
+  "moods": [
+   "light",
+   "feelgood",
+   "binge"
+  ],
+  "seasons": "9 seasons"
+ },
+ {
+  "id": 30,
+  "title": "Friends",
+  "year": 1994,
+  "type": "series",
+  "language": "English",
+  "genres": [
+   "Comedy",
+   "Romance"
+  ],
+  "minutes": 22,
+  "rating": 8.9,
+  "cast": [
+   "Jennifer Aniston",
+   "Matthew Perry",
+   "David Schwimmer"
+  ],
+  "summary": "Six friends navigate life and love in New York City.",
+  "moods": [
+   "light",
+   "feelgood",
+   "binge"
+  ],
+  "seasons": "10 seasons"
+ },
+ {
+  "id": 31,
+  "title": "Money Heist",
+  "year": 2017,
+  "type": "series",
+  "language": "Spanish",
+  "genres": [
+   "Crime",
+   "Thriller",
+   "Action"
+  ],
+  "minutes": 50,
+  "rating": 8.2,
+  "cast": [
+   "Úrsula Corberó",
+   "Álvaro Morte",
+   "Pedro Alonso"
+  ],
+  "summary": "A criminal mastermind recruits a gang to pull off the greatest heist in history.",
+  "moods": [
+   "binge",
+   "intense",
+   "twist"
+  ],
+  "seasons": "5 parts"
+ },
+ {
+  "id": 32,
+  "title": "Squid Game",
+  "year": 2021,
+  "type": "series",
+  "language": "Korean",
+  "genres": [
+   "Thriller",
+   "Drama"
+  ],
+  "minutes": 55,
+  "rating": 8,
+  "cast": [
+   "Lee Jung-jae",
+   "Park Hae-soo",
+   "Wi Ha-joon"
+  ],
+  "summary": "Desperate people compete in deadly children's games for a huge cash prize.",
+  "moods": [
+   "dark",
+   "intense",
+   "binge"
+  ],
+  "seasons": "3 seasons"
+ },
+ {
+  "id": 33,
+  "title": "Dark",
+  "year": 2017,
+  "type": "series",
+  "language": "German",
+  "genres": [
+   "Sci-Fi",
+   "Mystery",
+   "Thriller"
+  ],
+  "minutes": 55,
+  "rating": 8.7,
+  "cast": [
+   "Louis Hofmann",
+   "Lisa Vicari"
+  ],
+  "summary": "A missing child in a small town unravels a time-travel conspiracy across generations.",
+  "moods": [
+   "mindbending",
+   "dark",
+   "binge"
+  ],
+  "seasons": "3 seasons"
+ },
+ {
+  "id": 34,
+  "title": "Death Note",
+  "year": 2006,
+  "type": "series",
+  "language": "Japanese",
+  "genres": [
+   "Animation",
+   "Thriller",
+   "Mystery"
+  ],
+  "minutes": 23,
+  "rating": 8.6,
+  "cast": [
+   "Mamoru Miyano",
+   "Kappei Yamaguchi"
+  ],
+  "summary": "A student finds a notebook that kills anyone whose name is written in it.",
+  "moods": [
+   "mindbending",
+   "dark",
+   "binge"
+  ],
+  "seasons": "37 episodes"
+ },
+ {
+  "id": 35,
+  "title": "Panchayat",
+  "year": 2020,
+  "type": "series",
+  "language": "Hindi",
+  "genres": [
+   "Comedy",
+   "Drama"
+  ],
+  "minutes": 35,
+  "rating": 8.9,
+  "cast": [
+   "Jitendra Kumar",
+   "Neena Gupta",
+   "Raghubir Yadav"
+  ],
+  "summary": "An engineering graduate takes a job as a village panchayat secretary in rural UP.",
+  "moods": [
+   "feelgood",
+   "light",
+   "binge",
+   "emotional"
+  ],
+  "seasons": "4 seasons"
+ },
+ {
+  "id": 36,
+  "title": "The Family Man",
+  "year": 2019,
+  "type": "series",
+  "language": "Hindi",
+  "genres": [
+   "Action",
+   "Thriller",
+   "Comedy"
+  ],
+  "minutes": 45,
+  "rating": 8.7,
+  "cast": [
+   "Manoj Bajpayee",
+   "Priyamani",
+   "Sharib Hashmi"
+  ],
+  "summary": "A middle-class man secretly works as an intelligence officer while juggling family life.",
+  "moods": [
+   "binge",
+   "intense",
+   "light"
+  ],
+  "seasons": "2+ seasons"
+ },
+ {
+  "id": 37,
+  "title": "Sacred Games",
+  "year": 2018,
+  "type": "series",
+  "language": "Hindi",
+  "genres": [
+   "Crime",
+   "Thriller",
+   "Drama"
+  ],
+  "minutes": 50,
+  "rating": 8.5,
+  "cast": [
+   "Saif Ali Khan",
+   "Nawazuddin Siddiqui"
+  ],
+  "summary": "A police officer has 25 days to stop a catastrophe, guided by a gangster's cryptic clues.",
+  "moods": [
+   "dark",
+   "binge",
+   "intense"
+  ],
+  "seasons": "2 seasons"
+ },
+ {
+  "id": 38,
+  "title": "Mirzapur",
+  "year": 2018,
+  "type": "series",
+  "language": "Hindi",
+  "genres": [
+   "Crime",
+   "Action",
+   "Drama"
+  ],
+  "minutes": 50,
+  "rating": 8.5,
+  "cast": [
+   "Pankaj Tripathi",
+   "Ali Fazal",
+   "Divyenndu"
+  ],
+  "summary": "Power, crime and family feuds in the lawless heartland of Mirzapur.",
+  "moods": [
+   "dark",
+   "binge",
+   "intense"
+  ],
+  "seasons": "3 seasons"
+ },
+ {
+  "id": 39,
+  "title": "Delhi Crime",
+  "year": 2019,
+  "type": "series",
+  "language": "Hindi",
+  "genres": [
+   "Crime",
+   "Drama"
+  ],
+  "minutes": 45,
+  "rating": 8.5,
+  "cast": [
+   "Shefali Shah",
+   "Rasika Dugal"
+  ],
+  "summary": "Police race to catch the culprits of a high-profile 2012 Delhi crime.",
+  "moods": [
+   "dark",
+   "emotional"
+  ],
+  "seasons": "2+ seasons"
+ }
+]

@@ -1,0 +1,107 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Popcorn.ai</title>
+<style>
+:root{--ac:#e50914;--bg:#141414;--c2:#222;--mu:#a3a3a3}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:#fff;font:15px/1.45 system-ui,"Segoe UI",Roboto,sans-serif;overflow-x:hidden}
+nav{position:fixed;top:0;left:0;right:0;z-index:20;display:flex;gap:10px;align-items:center;padding:12px 4%;background:linear-gradient(#000d,transparent);transition:.3s}
+nav.s{background:var(--bg)}.logo{color:var(--ac);font-weight:800;font-size:23px;margin-right:10px}
+nav select,.nb{background:#000a;color:#fff;border:1px solid #555;border-radius:4px;padding:5px 10px;cursor:pointer;font:inherit}.nb.on{background:#fff;color:#000}
+.hero{height:78vh;min-height:430px;background:#222 center/cover;position:relative;display:flex;align-items:flex-end;padding:0 4% 9%}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,#141414 4%,transparent 62%),linear-gradient(0deg,#141414 2%,transparent 38%)}
+.hi{position:relative;z-index:1;max-width:560px}.hi h1{font-size:clamp(28px,5vw,54px);margin:0 0 8px;line-height:1.05}
+.hi p{display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;color:#ddd;margin:0 0 14px}
+.btn{border:0;border-radius:4px;padding:9px 20px;font-weight:700;font-size:15px;cursor:pointer;margin:0 8px 6px 0}.bw{background:#fff;color:#000}.bg{background:#6d6d6eb3;color:#fff}
+#note{margin:70px 4% -50px;background:#3a2a00;border:1px solid #8a6500;padding:8px 12px;border-radius:6px;display:none;position:relative;z-index:3}
+h2{margin:22px 4% 6px;font-size:19px}
+.row{display:flex;gap:8px;overflow-x:auto;padding:8px 4% 16px;scrollbar-width:thin}
+.card{flex:0 0 158px;aspect-ratio:2/3;border-radius:6px;background:#333 center/cover;position:relative;cursor:pointer;transition:transform .2s;overflow:hidden}
+.card:hover{transform:scale(1.07);z-index:2}.card .t{position:absolute;inset:auto 0 0 0;padding:28px 8px 8px;background:linear-gradient(transparent,#000d);font-size:12.5px;font-weight:600;opacity:0;transition:.2s}
+.card:hover .t,.card.np .t{opacity:1}.g{color:#46d369}.mu{color:var(--mu);font-size:13px}
+footer{padding:30px 4% 90px;color:#777;font-size:12px}
+#md{position:fixed;inset:0;background:#000c;z-index:50;display:none;overflow-y:auto;padding:4vh 12px}#md.on{display:block}
+.box{max-width:860px;margin:auto;background:#181818;border-radius:10px;overflow:hidden;position:relative}
+#mh{aspect-ratio:16/9;background:#222 center/cover;position:relative}#mh iframe{width:100%;height:100%;border:0}
+#mh::after{content:"";position:absolute;inset:0;background:linear-gradient(0deg,#181818,transparent 45%);pointer-events:none}#mh.pl::after{display:none}
+.play{position:absolute;left:24px;bottom:20px;z-index:2}.x{position:absolute;right:12px;top:10px;z-index:3;background:#000a;color:#fff;border:0;border-radius:50%;width:34px;height:34px;font-size:18px;cursor:pointer}
+#mb{padding:6px 24px 26px}#mb h3{font-size:28px;margin:4px 0}.tg{display:inline-block;border:1px solid #555;border-radius:99px;padding:1px 10px;margin:0 6px 6px 0;font-size:12px}
+#fab{position:fixed;right:20px;bottom:20px;z-index:30;width:60px;height:60px;border-radius:50%;border:0;background:var(--ac);font-size:28px;cursor:pointer;box-shadow:0 6px 20px #000a}
+#chat{position:fixed;right:16px;bottom:90px;z-index:40;width:410px;max-width:calc(100vw - 24px);height:min(640px,calc(100vh - 110px));background:#1c1c1c;border:1px solid #333;border-radius:14px;display:none;flex-direction:column;overflow:hidden;box-shadow:0 12px 40px #000}
+#chat.on{display:flex}.ch{padding:10px 12px;border-bottom:1px solid #333;display:flex;gap:8px;align-items:center;flex-wrap:wrap;font-size:13px}.ch select{background:#333;color:#fff;border:0;border-radius:6px;padding:3px}
+#log{flex:1;overflow-y:auto;padding:12px;display:flex;flex-direction:column;gap:10px}
+.m{max-width:94%;padding:9px 12px;border-radius:14px;white-space:pre-wrap;animation:in .25s}@keyframes in{from{opacity:0;transform:translateY(6px)}}
+.u{align-self:flex-end;background:var(--ac);border-bottom-right-radius:4px}.b{align-self:flex-start;background:#2c2c2c;border-bottom-left-radius:4px}
+.mc{display:flex;gap:10px;margin-top:8px;background:#1c1c1c;border-radius:8px;padding:6px;cursor:pointer;white-space:normal;font-size:13px}.mc:hover{background:#333}
+.mp{flex:0 0 62px;height:92px;border-radius:5px;background:#444 center/cover}
+.qs{padding:6px 10px 0;display:flex;gap:6px;overflow-x:auto}.chip{flex:none;border:1px solid #555;background:#2c2c2c;color:#fff;border-radius:99px;padding:4px 11px;font-size:12.5px;cursor:pointer}
+form{display:flex;gap:6px;padding:10px;border-top:1px solid #333}input[type=text]{flex:1;min-width:0;padding:10px 12px;border-radius:99px;border:1px solid #444;background:#141414;color:#fff;font:inherit}
+.ic{border:0;border-radius:50%;width:40px;height:40px;background:var(--ac);color:#fff;font-size:17px;cursor:pointer}.ic.sec{background:#333}.ic.rec{animation:p 1s infinite}@keyframes p{50%{box-shadow:0 0 0 8px #e5091455}}
+.dots span{display:inline-block;width:6px;height:6px;margin:0 2px;border-radius:50%;background:#aaa;animation:bn 1s infinite}.dots span:nth-child(2){animation-delay:.15s}.dots span:nth-child(3){animation-delay:.3s}@keyframes bn{50%{transform:translateY(-4px)}}
+label{cursor:pointer}
+</style></head><body>
+<nav id="nav"><span class="logo">🍿 POPCORN.AI</span><select id="lang"></select><button class="nb on" data-t="">All</button><button class="nb" data-t="movie">Movies</button><button class="nb" data-t="series">Series</button></nav>
+<div id="note"></div>
+<section class="hero" id="hero"></section><main id="rows"></main>
+<footer>This product uses the TMDB API but is not endorsed or certified by TMDB. Where-to-watch data provided by JustWatch. Trailers play from YouTube.</footer>
+<div id="md"><div class="box"><button class="x" id="mx">✕</button><div id="mh"></div><div id="mb"></div></div></div>
+<button id="fab" title="Ask Popcorn">🤖</button>
+<aside id="chat"><div class="ch"><b>🍿 Ask Popcorn</b><label><input type="checkbox" id="ai" checked> ✨ LLM</label><label><input type="checkbox" id="tts"> 🔊</label><span style="flex:1"></span><select id="vl"></select></div>
+<div id="log"></div><div class="qs" id="qs"></div>
+<form id="f"><button type="button" class="ic sec" id="mic" title="Speak">🎤</button><input type="text" id="in" placeholder="e.g. underrated Tamil thriller" autocomplete="off"><button class="ic">➤</button></form></aside>
+<script>
+const $=s=>document.querySelector(s),esc=s=>String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c])),api=(p,o)=>fetch(p,o).then(r=>r.json());
+const S={lang:"",type:"",seen:[],hist:[],cfg:{}},ITEMS={};let cur=null;
+const LANGS=["Hindi","Tamil","Telugu","Kannada","Malayalam","English","Korean","Japanese","Spanish","French","German"];
+const VC={"Auto-detect":"",English:"en-IN",Hindi:"hi-IN",Tamil:"ta-IN",Telugu:"te-IN",Kannada:"kn-IN",Malayalam:"ml-IN"};
+const hue=s=>[...s].reduce((h,c)=>(h*31+c.charCodeAt(0))%360,0);
+const bgp=x=>x.poster?`background-image:url(${esc(x.poster)})`:`background:linear-gradient(135deg,hsl(${hue(x.title)},60%,35%),hsl(${(hue(x.title)+50)%360},65%,20%))`;
+const dur=m=>m>=60?`${Math.floor(m/60)}h ${m%60?m%60+"m":""}`.trim():m+" min";
+const rt=x=>{if(!x.runtime)return"";const se=x.seasons?(typeof x.seasons=="number"?`${x.seasons} season${x.seasons>1?"s":""}`:x.seasons):"";return x.media=="movie"?dur(x.runtime):`~${x.runtime} min/ep${se?" · "+se:""}`};
+const card=x=>(ITEMS[x.id]=x,`<div class="card ${x.poster?"":"np"}" data-id="${esc(x.id)}" style="${bgp(x)}"><div class="t">${esc(x.title)}<br><span class="g">⭐${x.rating}</span> · ${esc(x.year)}</div></div>`);
+const mc=x=>(ITEMS[x.id]=x,`<div class="mc" data-id="${esc(x.id)}"><div class="mp" style="${bgp(x)}"></div><div><b>${esc(x.title)}</b> <span class="mu">(${esc(x.year)}) ⭐${x.rating}</span><div class="mu">${esc([x.media=="tv"?"Series":"Movie",x.language,rt(x)].filter(Boolean).join(" · "))}</div><div class="mu">${esc((x.genres||[]).slice(0,3).join(", "))}</div><div class="mu">Why: ${esc(x.why||"")} · tap for trailer ▶</div></div></div>`);
+document.addEventListener("click",e=>{const c=e.target.closest("[data-id]");if(c&&ITEMS[c.dataset.id])modal(ITEMS[c.dataset.id])});
+addEventListener("scroll",()=>$("#nav").classList.toggle("s",scrollY>50));
+/* ---- nav + home ---- */
+$("#lang").innerHTML='<option value="">All languages</option>'+LANGS.map(l=>`<option>${l}</option>`).join("");
+$("#lang").onchange=e=>{S.lang=e.target.value;loadHome()};
+document.querySelectorAll(".nb").forEach(b=>b.onclick=()=>{S.type=b.dataset.t;document.querySelectorAll(".nb").forEach(x=>x.classList.toggle("on",x==b));loadHome()});
+async function loadHome(){
+ const rows=await api(`/api/home?lang=${encodeURIComponent(S.lang)}&type=${S.type}`);
+ const pool=rows.flatMap(r=>r.items).filter(x=>x.backdrop),h=pool[Math.floor(Math.random()*Math.min(6,pool.length))]||(rows[0]&&rows[0].items[0]);
+ if(h){ITEMS[h.id]=h;$("#hero").style.backgroundImage=h.backdrop?`url(${h.backdrop})`:"none";$("#hero").innerHTML=`<div class="hi"><h1>${esc(h.title)}</h1><p class="mu" style="color:#ddd">⭐ ${h.rating} · ${esc(h.year)} · ${esc(h.language)}</p><p>${esc(h.overview)}</p><button class="btn bw" data-id="${esc(h.id)}">▶ Trailer &amp; details</button><button class="btn bg" onclick="openChat()">🤖 Ask Popcorn</button></div>`}
+ $("#rows").innerHTML=rows.map(r=>`<h2>${esc(r.name)}</h2><div class="row">${r.items.map(card).join("")}</div>`).join("")||"<h2>No titles found</h2>"}
+/* ---- modal + trailer ---- */
+function modal(x){cur=x;$("#md").classList.add("on");paint(x);
+ if(!x.id.startsWith("local:")&&!x.cast)api(`/api/title/${x.media}/${x.tmdb_id}`).then(d=>{if(d.title&&cur&&cur.id==x.id){cur={...x,...d};ITEMS[x.id]=cur;paint(cur)}}).catch(()=>{})}
+function paint(x){
+ const h=$("#mh");h.className="";h.style.backgroundImage=(x.backdrop||x.poster)?`url(${x.backdrop||x.poster})`:"none";
+ h.innerHTML=`<button class="btn bw play" id="pl">▶ ${x.trailer?"Play trailer":"Find trailer on YouTube"}</button>`;
+ $("#pl").onclick=()=>{if(x.trailer){h.className="pl";h.innerHTML=`<iframe src="https://www.youtube.com/embed/${encodeURIComponent(x.trailer)}?autoplay=1&rel=0" allow="autoplay; encrypted-media; fullscreen" allowfullscreen></iframe>`}else open("https://www.youtube.com/results?search_query="+encodeURIComponent(`${x.title} ${x.year} official trailer`),"_blank")};
+ const p=x.providers||{},pv=[["Stream",p.flatrate],["Rent",p.rent],["Buy",p.buy]].filter(a=>a[1]&&a[1].length).map(a=>`<div class="mu"><b>${a[0]}:</b> ${esc(a[1].join(", "))}</div>`).join("");
+ $("#mb").innerHTML=`<h3>${esc(x.title)}</h3><div class="mu"><span class="g">⭐ ${x.rating}</span> (${x.votes||0} votes) · ${esc(x.year)} · ${x.media=="tv"?"Series":"Movie"} · ${esc(x.language)} ${rt(x)?"· "+esc(rt(x)):""}</div>
+ <div style="margin:10px 0">${(x.genres||[]).map(g=>`<span class="tg">${esc(g)}</span>`).join("")}</div>${x.tagline?`<p class="mu"><i>${esc(x.tagline)}</i></p>`:""}<p>${esc(x.overview)}</p>
+ ${x.cast?`<p><b>Cast:</b> ${esc(x.cast.join(", "))}</p>`:'<p class="mu">Loading cast…</p>'}${x.director&&x.director.length?`<p><b>${x.media=="tv"?"Created by":"Director"}:</b> ${esc(x.director.join(", "))}</p>`:""}
+ ${pv?`<p><b>Where to watch (${"IN"}):</b></p>${pv}`:""}<button class="btn bg" id="ml">✨ More like this</button>`;
+ $("#ml").onclick=()=>{closeModal();openChat();send(`something like ${x.title}`)}}
+function closeModal(){$("#md").classList.remove("on");$("#mh").innerHTML=""}
+$("#mx").onclick=closeModal;$("#md").onclick=e=>{if(e.target.id=="md")closeModal()};addEventListener("keydown",e=>{if(e.key=="Escape")closeModal()});
+/* ---- chat ---- */
+function openChat(){$("#chat").classList.add("on");$("#in").focus()}$("#fab").onclick=()=>$("#chat").classList.toggle("on");
+$("#vl").innerHTML=Object.entries(VC).map(([k,v])=>`<option value="${v}">${k}</option>`).join("");
+["Underrated gems","Surprise me","Make me cry a little","Quick funny movie under 2 hours","Mind-bending thriller","Feel-good Hindi series","Another one"].forEach(q=>{const b=document.createElement("button");b.className="chip";b.type="button";b.textContent=q;b.onclick=()=>send(q);$("#qs").append(b)});
+function bubble(c,t){const d=document.createElement("div");d.className="m "+c;d.textContent=t;$("#log").append(d);$("#log").scrollTop=1e9;return d}
+function speak(t){if(!$("#tts").checked||!window.speechSynthesis)return;const u=new SpeechSynthesisUtterance(t),sc=[[/[\u0900-\u097F]/,"hi-IN"],[/[\u0B80-\u0BFF]/,"ta-IN"],[/[\u0C00-\u0C7F]/,"te-IN"],[/[\u0C80-\u0CFF]/,"kn-IN"],[/[\u0D00-\u0D7F]/,"ml-IN"]].find(s=>s[0].test(t));u.lang=sc?sc[1]:($("#vl").value||"en-IN");speechSynthesis.cancel();speechSynthesis.speak(u)}
+async function send(q){q=q.trim();if(!q)return;openChat();bubble("u",q);$("#in").value="";
+ const w=bubble("b","");w.innerHTML='<span class="dots"><span></span><span></span><span></span></span>';
+ try{const j=await api("/api/chat",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify({message:q,history:S.hist.slice(-8),lang:S.lang||null,type:S.type||null,seen:S.seen,use_llm:$("#ai").checked})});
+  w.remove();const d=bubble("b",j.reply||"Something went wrong.");(j.items||[]).forEach(x=>{d.insertAdjacentHTML("beforeend",mc(x));S.seen.push(x.id)});
+  S.hist.push({role:"user",content:q},{role:"assistant",content:j.reply});speak(j.reply);console.log("NLP:",j.parsed,"| source:",j.source)}
+ catch(e){w.textContent="Server error: "+e}}
+$("#f").onsubmit=e=>{e.preventDefault();send($("#in").value)};
+let mr=null;$("#mic").onclick=async()=>{if(mr){mr.stop();return}
+ try{const s=await navigator.mediaDevices.getUserMedia({audio:true}),ch=[];mr=new MediaRecorder(s);mr.ondataavailable=e=>ch.push(e.data);
+  mr.onstop=async()=>{s.getTracks().forEach(t=>t.stop());$("#mic").classList.remove("rec");mr=null;const fd=new FormData();fd.append("file",new Blob(ch,{type:"audio/webm"}),"a.webm");const l=$("#vl").value.slice(0,2);if(l)fd.append("lang",l);
+   const r=await api("/api/transcribe",{method:"POST",body:fd});r.text?send(r.text):bubble("b","Couldn't transcribe that"+(r.error?" ("+r.error+")":"")+". Try again.")};
+  mr.start();$("#mic").classList.add("rec")}catch(e){bubble("b","Mic unavailable: "+e.message)}};
+/* ---- boot ---- */
+api("/api/config").then(c=>{S.cfg=c;if(!c.tmdb){$("#note").style.display="block";$("#note").textContent="Offline demo catalog. Add TMDB_API_KEY to .env (free) to search every movie & series with posters and trailers."}});
+loadHome();bubble("b","Hi! I'm Popcorn.ai 🍿 Ask for anything: \"underrated Korean thrillers\", \"something like Dark\", \"how long is Inception?\" — type or tap 🎤.");
+</script></body></html>
