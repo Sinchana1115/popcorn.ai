@@ -1,6 +1,32 @@
 @'
-.venv/
+# secrets and keys
 .env
+.env.*
+!.env.example
+*.key
+*.pem
+*.p12
+*.secret
+secrets/
+credentials*.json
+service-account*.json
+
+# virtual environments
+.venv/
+venv/
+env/
+
+# python
 __pycache__/
+*.pyc
+.pytest_cache/
+
+# generated files
 data/emb_*.npy
+
+# editor and OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
 '@ | Set-Content -Path .gitignore -Encoding ascii
