@@ -9,6 +9,6 @@ if not exist .venv (
   call .venv\Scripts\activate
 )
 if not exist .env copy .env.example .env
-python -m uvicorn app.main:app
+python -m uvicorn app.main:app --port 8010
 pause
 '@ | Set-Content -Path run.bat -Encoding ascii
